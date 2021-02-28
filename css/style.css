@@ -1,4 +1,3 @@
-
 * {
 	margin: 0;
 	padding: 0;
@@ -6,4 +5,40 @@
 	list-style: none;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+img {
+  width: 60vw;
+  height: 80vh;
+  object-fit: cover;
+}
+.container {
+	position: relative;
+	width: 60vw;
+	height: 80vh;
+}
+.img-container-before,
+.img-container-after {
+  position: absolute;
+  width: 60vw;
+	height: 80vh;
+}
+.img-container-before{
+  width: 30vw;
+  overflow: hidden;
+}
+.slider{
+  width: .5rem;
+  background-color: #fff;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
